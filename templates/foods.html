@@ -1,0 +1,21 @@
+<!-- author:Sole_idol -->
+<!-- filename: foods.html -->
+<!-- datetime:2020/9/1 19:25 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+</head>
+<body>
+<h3>这家饭店的主厨是{{name}}，今年{{age}}了，拿手好菜是：</h3>
+<ul>
+    {% for food in foods%}
+    <li>{{food}}</li>
+    {% endfor %}
+    <li>菜单报告完毕</li>
+
+</ul>
+</body>
+</html>

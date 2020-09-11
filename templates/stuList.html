@@ -1,0 +1,29 @@
+<!-- author:Sole_idol -->
+<!-- filename: stuList.html -->
+<!-- datetime:2020/9/2 9:30 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stulist</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>age</td>
+    </tr>
+
+    {% for stu in s_list %}
+    <tr>
+        <td>{{stu.id}}</td>
+        <td>{{stu.s_name}}</td>
+        <td>{{stu.age}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

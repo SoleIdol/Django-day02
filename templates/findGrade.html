@@ -1,0 +1,18 @@
+<!-- author:Sole_idol -->
+<!-- filename: findGrade.html -->
+<!-- datetime:2020/9/2 9:47 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>班级列表</title>
+</head>
+<body>
+<ul>
+    {% for grade in g_list %}
+    <li><a href="/app1/graStu/?g_name={{grade.g_name}}">{{grade.g_name}}</a></li>
+    {% endfor %}
+</ul>
+</body>
+</html>
